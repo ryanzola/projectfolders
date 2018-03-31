@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100vw;
+  padding: 0.25em 1em;
+  background: rgba(black, 0.9);
+  opacity: 0;
+  font-family: 'Homemade Apple', cursive;
+  .title {
+    font-size: 3em;
+  }
+}
+
+.landing {
+  height: 100vh;
+  padding: 1em;
+  background: linear-gradient(-120deg, #222135, #050407);
+}
+
+.breaker {
+  height: 50vh;
+  padding: 1em;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1em;
+
+  .column {
+    padding: 1em;
+    background: rgba(#9085db, 0.1);
+  }
+}
+
+.footer {
+  height: 200px;
+  padding: 1em;
+  background-color: #9085db;
+}
