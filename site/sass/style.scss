@@ -7,13 +7,25 @@ html {
   font-weight: 100;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background: black;
   color: white;
 }
 
@@ -23,6 +35,8 @@ body {
   height: 80px;
   width: 100vw;
   padding: 0.25em 1em;
+  display: flex;
+  justify-content: space-between;
   background: rgba(black, 0.9);
   opacity: 0;
   font-family: 'Homemade Apple', cursive;
@@ -33,12 +47,27 @@ body {
 
 .landing {
   height: 100vh;
-  padding: 1em;
-  background: linear-gradient(-120deg, #222135, #050407);
+  padding: 1em 1em 2em 1em;
+  background-image: radial-gradient(circle, #2c2b4b 0%, #050407 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-title {
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 400;
+}
+.intro {
+  width: 70%;
+}
+.screen {
+  width: 70%;
 }
 
 .breaker {
-  height: 50vh;
+  height: 60vh;
   padding: 1em;
   background-color: black;
   display: grid;
@@ -47,7 +76,41 @@ body {
 
   .column {
     padding: 1em;
-    background: rgba(#9085db, 0.1);
+    display: flex;
+    flex-direction: column;
+    .title {
+      text-align: center;
+      font-weight: 400;
+    }
+    .graphic {
+      width: 100%;
+    }
+  }
+}
+
+.showcase {
+  width: 70vw;
+  padding: 2em;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  .icons {
+    height: 60px;
+    width: 60px;
+  }
+}
+.download {
+  border: none;
+  height: 40px;
+  width: 140px;
+  border-radius: 5px;
+  background: #9085db;
+  color: white;
+  cursor: pointer;
+  transition: background 200ms ease-in-out;
+  &:hover {
+    background: #2c2b4b
   }
 }
 
@@ -55,4 +118,50 @@ body {
   height: 200px;
   padding: 1em;
   background-color: #9085db;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .social {
+    width: 40vw;
+    display: flex;
+    align-items: space-around;
+    justify-content: space-between;
+    .link {
+      height: 42px;
+      width: 42px;
+      background: transparent;
+      .social-icon {
+        height: 40px;
+        width: 40px;
+      }
+      &:hover .fa-github {
+        color: #3F2B5E;
+      }
+      &:hover .fa-codepen {
+        color: #666;
+      }
+      &:hover .fa-twitter {
+        color: #55acee;
+      }
+      &:hover .fa-instagram {
+        color: #ff2da0;
+      }
+      &:hover .fa-tumblr {
+        color: #36465d;
+      }
+      &:hover .fa-linkedin {
+        color: #0e76a8;
+      }
+      &:hover .fa-envelope {
+        color: #edb200;
+      }
+    }
+
+
+    .me {
+      border-bottom: 1px dashed white;
+    }
+  }
 }

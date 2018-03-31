@@ -1,3 +1,5 @@
+import path from 'path';
+
 $(window).scroll(function() {
   var scrollTop = $(this).scrollTop();
 

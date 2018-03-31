@@ -13,9 +13,10 @@ server.use(
 );
 server.set('view engine', 'pug');
 server.use(express.static('./public'));
+server.use(express.static('./assets'));
 
 server.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', { pageTitle: 'Project Folders' });
 });
 
 server.listen(port, () => { 
