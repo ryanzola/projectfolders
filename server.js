@@ -5,6 +5,10 @@ import path from 'path';
 const server = express();
 const port = process.env.HOST || 3000;
 
+let options = {
+  pageTitle: 'Project Folders'
+}
+
 server.use(
   sassMiddleware({
     src: path.join(__dirname, 'sass'),
@@ -13,10 +17,10 @@ server.use(
 );
 server.set('view engine', 'pug');
 server.use(express.static('./public'));
-server.use(express.static('./assets'));
+server.use('/assets', express.static(__dirname + '/assets'))
 
 server.get('/', (req, res) => {
-  res.render('index', { pageTitle: 'Project Folders' });
+  res.render('index', options);
 });
 
 server.listen(port, () => { 
