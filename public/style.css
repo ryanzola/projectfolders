@@ -82,14 +82,15 @@ body {
 
 .mac {
   background-image: url("../assets/mac-instructions.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position-y: bottom; }
 
 .win {
   background-image: url("../assets/win-instructions.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position-y: bottom; }
 
 .breaker {
-  height: 25vw;
   background-color: black; }
   .breaker .column .title {
     font-family: 'Roboto', sans-serif; }
