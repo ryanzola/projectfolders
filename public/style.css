@@ -19,9 +19,9 @@ p {
   color: #999; }
 
 body {
+  width: 100vw;
   margin: 0;
   padding: 0;
-  max-width: 1200px;
   background: black;
   color: white; }
 
@@ -58,7 +58,8 @@ body {
 
 .screen {
   margin: 10px 0;
-  width: 70vw; }
+  width: 70vw;
+  max-width: 775px; }
 
 .showcase {
   width: 70vw;
@@ -72,20 +73,22 @@ body {
     width: 6vw; }
 
 .button-area {
-  width: 50vw;
+  width: 55vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly; }
   .button-area .download {
-    border: none;
-    height: 40px;
-    width: 15vw;
+    height: 5vw;
+    width: 25vw;
+    max-height: 50px;
+    max-width: 150px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #9085db;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
+    text-align: center;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -175,7 +178,7 @@ body {
       .footer .social .link:hover .fa-envelope {
         color: #edb200; }
   .footer .legal {
-    width: 50vw;
+    width: 30vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
