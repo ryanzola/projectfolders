@@ -70,7 +70,7 @@ body {
 .screen {
   margin: 10px 0;
   width: 70vw;
-  max-width: 775px; }
+  max-width: 1024px; }
 
 .showcase {
   width: 70vw;
@@ -133,18 +133,6 @@ body {
 .win {
   background-image: url("../assets/win-instructions.png");
   background-size: cover; }
-
-@media screen and (max-width: 400px) {
-  .landing {
-    height: 60vh; }
-  .instructions {
-    height: 60vh;
-    width: 90vw; }
-    .instructions ol {
-      height: 70%;
-      margin-top: 10px; }
-      .instructions ol li {
-        margin-bottom: 10px; } }
 
 .breaker {
   height: 35vw;
