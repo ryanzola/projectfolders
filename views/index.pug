@@ -1,79 +1,102 @@
 doctype html
 html(lang="en")
   include head.pug
-  body
-    header.header
-      .title Ryan Zola
-    section.landing
-      .section-title Gradient Project Folders
-      p.intro Dolore est nostrud deserunt veniam exercitation quis minim dolore quis deserunt ea exercitation dolore non. Nostrud veniam enim exercitation anim deserunt nulla aliqua aliqua incididunt.
-      img.screen(src="../assets/projectfolders.png")
-      p.intro Gradients make your life better: fact. So here's a set of over 40 handcrafted, artisan project-specific gradient folders + a bonus TypeScript folder for your computer system so you can live your best life.
-    section.breaker
-      .column 
+  body.container-fluid
+    //- header.header
+    //-   .title Ryan Zola
+    section.landing.row
+      .col-12
+        .section-title Gradient Project Folders
+        .row
+          .col-10.offset-1
+            img.screen.img-fluid(src="../assets/projectfolders.png")
+            p Gradients make your life better: fact. So here's a set of over 40 handcrafted, artisan project-specific gradient folders + a bonus TypeScript folder for your computer system so you can live your best life.
+
+    section.breaker.row
+      .column.col-4.d-flex.flex-column.justify-content-center.align-items-center
         .title Frameworks
         img.graphic(src="../assets/frameworks.png")
-      .column 
+      .column.col-4.d-flex.flex-column.justify-content-center.align-items-center
         .title Languages
         img.graphic(src="../assets/languages.png")
-      .column
+      .column.col-4.d-flex.flex-column.justify-content-center.align-items-center
         .title Applications
         img.graphic(src="../assets/applications.png")
-    section.landing
-      .section-title Folders With Icons
-      p.intro Icons help you remember and recognize folders without needing to read the name underneath. So far, we've got a few ready to go for you, with more on the way.
-      .showcase
-        img.icons(src='../assets/folders-icon/angular-folder.png')
-        img.icons(src='../assets/folders-icon/cordova-folder.png')
-        img.icons(src='../assets/folders-icon/docker-folder.png')
-        img.icons(src='../assets/folders-icon/github-folder.png')
-        img.icons(src='../assets/folders-icon/golang-folder.png')
-        img.icons(src='../assets/folders-icon/grpc-folder.png')
-        img.icons(src='../assets/folders-icon/ionic-folder.png')
-        img.icons(src='../assets/folders-icon/kubernetes-folder.png')
-        img.icons(src='../assets/folders-icon/laravel-folder.png')
-        img.icons(src='../assets/folders-icon/misc-folder.png')
-        img.icons(src='../assets/folders-icon/node-folder.png')
-        img.icons(src='../assets/folders-icon/rails-folder.png')
-        img.icons(src='../assets/folders-icon/react-folder.png')
-        img.icons(src='../assets/folders-icon/sketch-folder.png')
-        img.icons(src='../assets/folders-icon/squarespace-folder.png')
-        img.icons(src='../assets/folders-icon/swift-folder.png')
-        img.icons(src='../assets/folders-icon/typescript-folder.png')
-        img.icons(src='../assets/folders-icon/vscode-folder.png')
-        img.icons(src='../assets/folders-icon/vue-folder.png')
-        img.icons(src='../assets/folders-icon/wordpress-folder.png')
-      .button-area
-          a.download(href="../assets/downloads/mac/folders-icon.zip") Download for Mac
-          a.download(href="" download) Download for Windows
 
-    section.landing
-      .section-title Folders Without Icons
-      p.intro Not a web developer? Just a fan of gradients? Like to just randomly download things? That's fine. I got you covered!
-      .showcase
-        img.icons(src='../assets/folders-blank/angular-folder--blank.png')
-        img.icons(src='../assets/folders-blank/cordova-folder--blank.png')
-        img.icons(src='../assets/folders-blank/docker-folder--blank.png')
-        img.icons(src='../assets/folders-blank/github-folder--blank.png')
-        img.icons(src='../assets/folders-blank/golang-folder--blank.png')
-        img.icons(src='../assets/folders-blank/grpc-folder--blank.png')
-        img.icons(src='../assets/folders-blank/ionic-folder--blank.png')
-        img.icons(src='../assets/folders-blank/kubernetes-folder--blank.png')
-        img.icons(src='../assets/folders-blank/laravel-folder--blank.png')
-        img.icons(src='../assets/folders-blank/misc-folder--blank.png')
-        img.icons(src='../assets/folders-blank/node-folder--blank.png')
-        img.icons(src='../assets/folders-blank/rails-folder--blank.png')
-        img.icons(src='../assets/folders-blank/react-folder--blank.png')
-        img.icons(src='../assets/folders-blank/sketch-folder--blank.png')
-        img.icons(src='../assets/folders-blank/squarespace-folder--blank.png')
-        img.icons(src='../assets/folders-blank/swift-folder--blank.png')
-        img.icons(src='../assets/folders-blank/typescript-folder--blank.png')
-        img.icons(src='../assets/folders-blank/vscode-folder--blank.png')
-        img.icons(src='../assets/folders-blank/vue-folder--blank.png')
-        img.icons(src='../assets/folders-blank/wordpress-folder--blank.png')
-      .button-area
-          a.download(href="../assets/downloads/folders-blank.zip" download) Download for Mac
-          a.download(href="" download) Download for Windows
+    section.landing.row
+      .col-12
+        .section-title.mb-3 Folders With Icons
+        .row
+          .col-10.offset-1
+            p.intro.mb-5 Icons help you remember and recognize folders without needing to read the name underneath. So far, we've got a few ready to go for you, with more on the way.
+            .showcase.mb-5
+              img.icons(src='../assets/folders-icon/angular-folder.png')
+              img.icons(src='../assets/folders-icon/cordova-folder.png')
+              img.icons(src='../assets/folders-icon/docker-folder.png')
+              img.icons(src='../assets/folders-icon/github-folder.png')
+              img.icons(src='../assets/folders-icon/golang-folder.png')
+              img.icons(src='../assets/folders-icon/grpc-folder.png')
+              img.icons(src='../assets/folders-icon/ionic-folder.png')
+              img.icons(src='../assets/folders-icon/kubernetes-folder.png')
+              img.icons(src='../assets/folders-icon/laravel-folder.png')
+              img.icons(src='../assets/folders-icon/misc-folder.png')
+              img.icons(src='../assets/folders-icon/node-folder.png')
+              img.icons(src='../assets/folders-icon/rails-folder.png')
+              img.icons(src='../assets/folders-icon/react-folder.png')
+              img.icons(src='../assets/folders-icon/sketch-folder.png')
+              img.icons(src='../assets/folders-icon/squarespace-folder.png')
+              img.icons(src='../assets/folders-icon/swift-folder.png')
+              img.icons(src='../assets/folders-icon/typescript-folder.png')
+              img.icons(src='../assets/folders-icon/vscode-folder.png')
+              img.icons(src='../assets/folders-icon/vue-folder.png')
+              img.icons(src='../assets/folders-icon/wordpress-folder.png')
+            .button-area.d-flex.justify-content-center.align-items-center
+                a.mr-5(href="../assets/downloads/mac/folders-icon.zip" download) 
+                  button.download.btn.btn-primary 
+                    span.mr-3 Download
+                    span.fab.fa-apple
+                a.ml-5(href="" download) 
+                  button.download.btn.btn-primary 
+                    span.mr-3 Download
+                    span.fab.fa-windows
+
+    section.landing.row
+      .col-12
+        .section-title.mb-3 Folders Without Icons
+        .row
+          .col-10.offset-1
+            p.intro.mb-5 Not a web developer? Just a fan of gradients? Like to just randomly download things? That's fine. I got you covered!
+            .showcase.mb-5
+              img.icons(src='../assets/folders-blank/angular-folder--blank.png')
+              img.icons(src='../assets/folders-blank/cordova-folder--blank.png')
+              img.icons(src='../assets/folders-blank/docker-folder--blank.png')
+              img.icons(src='../assets/folders-blank/github-folder--blank.png')
+              img.icons(src='../assets/folders-blank/golang-folder--blank.png')
+              img.icons(src='../assets/folders-blank/grpc-folder--blank.png')
+              img.icons(src='../assets/folders-blank/ionic-folder--blank.png')
+              img.icons(src='../assets/folders-blank/kubernetes-folder--blank.png')
+              img.icons(src='../assets/folders-blank/laravel-folder--blank.png')
+              img.icons(src='../assets/folders-blank/misc-folder--blank.png')
+              img.icons(src='../assets/folders-blank/node-folder--blank.png')
+              img.icons(src='../assets/folders-blank/rails-folder--blank.png')
+              img.icons(src='../assets/folders-blank/react-folder--blank.png')
+              img.icons(src='../assets/folders-blank/sketch-folder--blank.png')
+              img.icons(src='../assets/folders-blank/squarespace-folder--blank.png')
+              img.icons(src='../assets/folders-blank/swift-folder--blank.png')
+              img.icons(src='../assets/folders-blank/typescript-folder--blank.png')
+              img.icons(src='../assets/folders-blank/vscode-folder--blank.png')
+              img.icons(src='../assets/folders-blank/vue-folder--blank.png')
+              img.icons(src='../assets/folders-blank/wordpress-folder--blank.png')
+            .button-area.d-flex.justify-content-center.align-items-center
+                a.mr-5(href="../assets/downloads/folders-blank.zip" download) 
+                  button.download.btn.btn-primary 
+                    span.mr-3 Download
+                    span.fab.fa-apple
+                a.ml-5(href="" download) 
+                  button.download.btn.btn-primary 
+                    span.mr-3 Download
+                    span.fab.fa-windows
+
     section.instructions.mac
       .section-title Instructions for Mac
       ol

@@ -20,9 +20,6 @@ p {
 }
 
 body {
-  width: 100vw;
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
   font-size: 12px;
   text-align: justify;
@@ -59,30 +56,15 @@ body {
 }
 
 .landing {
-  height: 100vh;
-  padding: 1em 1em 2em 1em;
+  padding-bottom: 30px;
   background-image: radial-gradient(circle, #2c2b4b 0%, #050407 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 .section-title {
   font-size: 2.5em;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
-.intro {
-  width: 70vw;
-}
-.screen {
-  margin: 10px 0;
-  width: 70vw;
-  max-width: 1024px;
-}
 .showcase {
-  width: 70vw;
-  padding: 2em;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
@@ -93,25 +75,9 @@ body {
   }
 }
 .button-area {
-  width: 55vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   .download {
-    height: 5vw;
-    width: 25vw;
-    max-height: 50px;
-    max-width: 150px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: #9085db;
     background: #9085db;
-    font-size: 1.2vw;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
     transition: background 200ms ease-in-out;
     &:hover {
       background: #2c2b4b;
@@ -119,13 +85,11 @@ body {
   }
 }
 
-
-
 .instructions {
   height: 100vh;
   width: 100vw;
   padding: 1em;
-  background: black;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,23 +117,15 @@ body {
 }
 
 .breaker {
-  height: 35vw;
-  padding: 1em;
+  height: 25vw;
   background-color: black;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1em;
 
   .column {
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
     .title {
-      text-align: center;
       font-family: 'Roboto', sans-serif;
     }
     .graphic {
-      width: 100%;
+      width: calc(68vw / 3);
     }
   }
 }
