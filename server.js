@@ -4,12 +4,12 @@ import sassMiddleware from 'node-sass-middleware';
 import path from 'path';
 
 const server = express();
-const port = process.env.HOST || 3000;
 
 let options = {
   pageTitle: 'Project Folders'
 }
 
+server.set('port', (process.env.PORT || 3000));
 server.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 server.use(
   sassMiddleware({
@@ -26,6 +26,6 @@ server.get('/', (req, res) => {
   res.render('index', options);
 });
 
-server.listen(port, () => { 
-  console.info(`server is listening on port ${port}`);
+server.listen(server.get('port'), () => { 
+  console.info(`server is listening on port ${server.get('port')}`);
 });
