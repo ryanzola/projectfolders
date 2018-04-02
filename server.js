@@ -26,6 +26,4 @@ server.get('/', (req, res) => {
   res.render('index', options);
 });
 
-server.listen(server.get('port'), () => { 
-  console.info(`server is listening on port ${server.get('port')}`);
-});
+server.listen(server.get('port'));
