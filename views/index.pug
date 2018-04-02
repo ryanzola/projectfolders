@@ -2,11 +2,10 @@ doctype html
 html(lang="en")
   include head.pug
   body.container-fluid
-    //- header.header
-    //-   .title Ryan Zola
+
     section.landing.row
       .col-12
-        .section-title Gradient Project Folders
+        .section-title.mt-2 Gradient Project Folders
         .row
           .col-10.offset-1
             img.screen.img-fluid(src="../assets/projectfolders.png")
@@ -97,35 +96,45 @@ html(lang="en")
                     span.mr-3 Download
                     span.fab.fa-windows
 
-    section.instructions.mac
-      .section-title Instructions for Mac
-      ol
-        li Download the icon set you want above, or 
-          span 
-            a(href="../assets/downloads/folders-all.zip" download) all of the Mac icons here.
-        li Unzip the icon set (this should make a folder. Icons are in .png format).
-        li Open the icon you want to set your folder to and copy it ctrl + c
-        li Right-click on the folder you want to customize and select "Get Info".
-        li Click on the icon to the left of the folder name in this view, and paste it ctrl + v
+    section.instructions.mac.row
+      .col-12
+        .section-title.mb-3 Instructions for Mac
+        .row
+          .col-10.offset-1
+            ol.mb-5
+              li Download the icon set you want above, or all of the Mac icons
+                span 
+                  a(href="../assets/downloads/folders-all.zip" download) here
+                span .
+              li Unzip the icon set (this should make a folder. Icons are in .png format).
+              li Open the icon you want to set your folder to and copy it ctrl + c
+              li Right-click on the folder you want to customize and select "Get Info".
+              li Click on the icon to the left of the folder name in this view, and paste it ctrl + v
 
-      p.more There's more information in 
-        span 
-          a(href="https://support.apple.com/kb/PH25383?locale=en_US") this article.
+            p.more.mb-5 There's more information in 
+              span 
+                a(href="https://support.apple.com/kb/PH25383?locale=en_US") this article
+              span .
     
-    section.instructions.win
-      .section-title Instructions for Windows
-      ol
-        li Download the icon set you want above, or 
-          span 
-            a(href="" download) all of the Windows icons here.
-        li Unzip the icon set (this should make a folder. Icons are in .ico format).
-        li Right-click on the folder you want to customize and select “Properties”.
-        li Under the “customize” tab, go to the “Folder icon” section, click on “Change icon” button.
-        li Select the icon you would like to replace it with.
-        li Save and you're done!
+    section.instructions.win.row
+      .col-12
+        .section-title Instructions for Windows
+        .row
+          .col-10.offset-1
+            ol
+              li Download the icon set you want above, or all of the Windows icons
+                span 
+                  a(href="" download) here
+                span .
+              li Unzip the icon set (this should make a folder. Icons are in .ico format).
+              li Right-click on the folder you want to customize and select “Properties”.
+              li Under the “customize” tab, go to the “Folder icon” section, click on “Change icon” button.
+              li Select the icon you would like to replace it with.
+              li Save and you're done!
 
-      p.more There's more information in 
-        span 
-          a(href="https://support.microsoft.com/en-us/help/812003/how-to-modify-your-folder-view-settings-or-to-customize-a-folder") this article.
-       
+            p.more.mb-5 There's more information in 
+              span 
+                a(href="https://support.microsoft.com/en-us/help/812003/how-to-modify-your-folder-view-settings-or-to-customize-a-folder") this article
+              span .
+            
     include footer.pug

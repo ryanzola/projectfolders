@@ -12,7 +12,10 @@ html {
   box-sizing: inherit; }
 
 a {
+  text-decoration: underline;
   color: white; }
+  a:hover {
+    color: #51488e; }
 
 p {
   margin: 0;
@@ -73,23 +76,9 @@ body {
     background: #2c2b4b; }
 
 .instructions {
-  height: 100vh;
-  width: 100vw;
-  padding: 1em;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .instructions ol {
-    height: 60vh;
-    margin-top: 60px;
-    margin-bottom: 0; }
-    .instructions ol li {
-      margin-bottom: 40px; }
+  background-color: black; }
   .instructions .more {
-    margin: 0;
-    padding: 0 25px; }
+    padding-left: 40px; }
 
 .mac {
   background-image: url("../assets/mac-instructions.png");
@@ -110,40 +99,30 @@ body {
 .footer {
   height: 15vw;
   width: 100vw;
-  padding: 1em;
-  background-color: #9085db;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
-  .footer .social {
-    width: 40vw;
+  background-color: #9085db; }
+  .footer .social .link {
+    height: 3vw;
+    width: 3vw;
     display: flex;
-    align-items: space-around;
-    justify-content: space-between; }
-    .footer .social .link {
-      height: 3vw;
-      width: 3vw;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .footer .social .link .social-icon {
-        height: 100%;
-        width: 100%; }
-      .footer .social .link:hover .fa-github {
-        color: #3f2b5e; }
-      .footer .social .link:hover .fa-codepen {
-        color: #666; }
-      .footer .social .link:hover .fa-twitter {
-        color: #55acee; }
-      .footer .social .link:hover .fa-instagram {
-        color: #ff2da0; }
-      .footer .social .link:hover .fa-tumblr {
-        color: #36465d; }
-      .footer .social .link:hover .fa-linkedin {
-        color: #0e76a8; }
-      .footer .social .link:hover .fa-envelope {
-        color: #edb200; }
+    justify-content: center;
+    align-items: center; }
+    .footer .social .link .social-icon {
+      height: 100%;
+      width: 100%; }
+    .footer .social .link:hover .fa-github {
+      color: #3f2b5e; }
+    .footer .social .link:hover .fa-codepen {
+      color: #666; }
+    .footer .social .link:hover .fa-twitter {
+      color: #55acee; }
+    .footer .social .link:hover .fa-instagram {
+      color: #ff2da0; }
+    .footer .social .link:hover .fa-tumblr {
+      color: #36465d; }
+    .footer .social .link:hover .fa-linkedin {
+      color: #0e76a8; }
+    .footer .social .link:hover .fa-envelope {
+      color: #edb200; }
   .footer .legal {
     width: 30vw;
     display: flex;

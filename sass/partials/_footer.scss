@@ -1,17 +1,8 @@
 .footer {
   height: 15vw;
   width: 100vw;
-  padding: 1em;
   background-color: #9085db;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   .social {
-    width: 40vw;
-    display: flex;
-    align-items: space-around;
-    justify-content: space-between;
     .link {
       height: 3vw;
       width: 3vw;
