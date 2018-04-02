@@ -44,8 +44,8 @@ html(lang="en")
         img.icons(src='../assets/folders-icon/vue-folder.png')
         img.icons(src='../assets/folders-icon/wordpress-folder.png')
       .button-area
-          button.download Download for Mac
-          button.download Download for Windows
+          a.download(href="../assets/downloads/mac/folders-icon.zip") Download for Mac
+          a.download(href="" download) Download for Windows
 
     section.landing
       .section-title Folders Without Icons
@@ -72,11 +72,37 @@ html(lang="en")
         img.icons(src='../assets/folders-blank/vue-folder--blank.png')
         img.icons(src='../assets/folders-blank/wordpress-folder--blank.png')
       .button-area
-          button.download Download for Mac
-          button.download Download for Windows
+          a.download(href="../assets/downloads/folders-blank.zip" download) Download for Mac
+          a.download(href="" download) Download for Windows
     section.instructions.mac
       .section-title Instructions for Mac
+      ol
+        li Download the icon set you want above, or 
+          span 
+            a(href="../assets/downloads/folders-all.zip" download) all of the Mac icons here.
+        li Unzip the icon set (this should make a folder. Icons are in .png format).
+        li Open the icon you want to set your folder to and copy it ctrl + c
+        li Right-click on the folder you want to customize and select "Get Info".
+        li Click on the icon to the left of the folder name in this view, and paste it ctrl + v
+
+      p.more There's more information in 
+        span 
+          a(href="https://support.apple.com/kb/PH25383?locale=en_US") this article.
+    
     section.instructions.win
       .section-title Instructions for Windows
+      ol
+        li Download the icon set you want above, or 
+          span 
+            a(href="" download) all of the Windows icons here.
+        li Unzip the icon set (this should make a folder. Icons are in .ico format).
+        li Right-click on the folder you want to customize and select “Properties”.
+        li Under the “customize” tab, go to the “Folder icon” section, click on “Change icon” button.
+        li Select the icon you would like to replace it with.
+        li Save and you're done!
+
+      p.more There's more information in 
+        span 
+          a(href="https://support.microsoft.com/en-us/help/812003/how-to-modify-your-folder-view-settings-or-to-customize-a-folder") this article.
        
     include footer.pug

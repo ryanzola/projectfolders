@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
 @import url("https://fonts.googleapis.com/css?family=Homemade+Apple");
-@import url("https://fonts.googleapis.com/css?family=Atomic+Age");
 html {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -16,12 +15,13 @@ a {
   color: white; }
 
 p {
-  margin-bottom: 0;
+  margin: 0;
   color: #999; }
 
 body {
   margin: 0;
   padding: 0;
+  max-width: 1200px;
   background: black;
   color: white; }
 
@@ -57,6 +57,7 @@ body {
   width: 70vw; }
 
 .screen {
+  margin: 10px 0;
   width: 70vw; }
 
 .showcase {
@@ -80,8 +81,12 @@ body {
     height: 40px;
     width: 15vw;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #9085db;
     font-size: 1.3vw;
+    text-decoration: none;
     color: white;
     cursor: pointer;
     transition: background 200ms ease-in-out; }
@@ -91,7 +96,21 @@ body {
 .instructions {
   height: 100vh;
   width: 100vw;
-  background: black; }
+  padding: 1em;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .instructions ol {
+    height: 60vh;
+    margin-top: 60px;
+    margin-bottom: 0; }
+    .instructions ol li {
+      margin-bottom: 40px; }
+  .instructions .more {
+    margin: 0;
+    padding: 0 25px; }
 
 .mac {
   background-image: url("../assets/mac-instructions.png");
@@ -102,7 +121,7 @@ body {
   background-size: cover; }
 
 .breaker {
-  height: 60vh;
+  height: 35vw;
   padding: 1em;
   background-color: black;
   display: grid;
@@ -119,7 +138,8 @@ body {
       width: 100%; }
 
 .footer {
-  height: 25vh;
+  height: 15vw;
+  width: 100vw;
   padding: 1em;
   background-color: #9085db;
   display: flex;
@@ -141,7 +161,7 @@ body {
         height: 100%;
         width: 100%; }
       .footer .social .link:hover .fa-github {
-        color: #3F2B5E; }
+        color: #3f2b5e; }
       .footer .social .link:hover .fa-codepen {
         color: #666; }
       .footer .social .link:hover .fa-twitter {
@@ -155,12 +175,10 @@ body {
       .footer .social .link:hover .fa-envelope {
         color: #edb200; }
   .footer .legal {
-    width: 60vw;
+    width: 50vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
-    .footer .legal .me {
-      display: flex;
-      flex-direction: row; }
-      .footer .legal .me a {
-        margin-right: 3px; }
+    justify-content: space-evenly;
+    font-size: 1.6vw; }
+    .footer .legal .me a {
+      margin-right: 3px; }

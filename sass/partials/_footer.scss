@@ -1,0 +1,61 @@
+.footer {
+  height: 15vw;
+  width: 100vw;
+  padding: 1em;
+  background-color: #9085db;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .social {
+    width: 40vw;
+    display: flex;
+    align-items: space-around;
+    justify-content: space-between;
+    .link {
+      height: 3vw;
+      width: 3vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .social-icon {
+        height: 100%;
+        width: 100%;
+      }
+      &:hover .fa-github {
+        color: #3f2b5e;
+      }
+      &:hover .fa-codepen {
+        color: #666;
+      }
+      &:hover .fa-twitter {
+        color: #55acee;
+      }
+      &:hover .fa-instagram {
+        color: #ff2da0;
+      }
+      &:hover .fa-tumblr {
+        color: #36465d;
+      }
+      &:hover .fa-linkedin {
+        color: #0e76a8;
+      }
+      &:hover .fa-envelope {
+        color: #edb200;
+      }
+    }
+  }
+
+  .legal {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.6vw;
+    .me {
+      a {
+        margin-right: 3px;
+      }
+    }
+  }
+}
