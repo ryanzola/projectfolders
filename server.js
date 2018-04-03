@@ -10,7 +10,7 @@ let options = {
 }
 
 server.set('port', (process.env.PORT || 3000));
-server.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+server.use(favicon(path.join(__dirname, 'favicon.ico')))
 server.use(
   sassMiddleware({
     src: path.join(__dirname, 'sass'),
