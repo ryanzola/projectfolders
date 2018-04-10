@@ -1,29 +1,19 @@
 import express from 'express';
 import favicon from 'serve-favicon';
-import sassMiddleware from 'node-sass-middleware';
 import path from 'path';
 
-const server = express();
+const app = express();
 
-let options = {
-  pageTitle: 'Project Folders'
-}
+app.set('port', (process.env.PORT || 3000));
+app.use(favicon(path.join(__dirname, 'favicon.ico')));
+app.use(express.static('./dist'));
+app.use('/dist', express.static(__dirname + 'dist'));
+app.use('/assets', express.static(__dirname + '/assets'));
 
-server.set('port', (process.env.PORT || 3000));
-server.use(favicon(path.join(__dirname, 'favicon.ico')))
-server.use(
-  sassMiddleware({
-    src: path.join(__dirname, 'sass'),
-    dest: path.join(__dirname, 'public')
-  })
-);
-server.set('view engine', 'pug');
-server.use(express.static('./public'));
-server.use('/assets', express.static(__dirname + '/assets'))
-
-
-server.get('/', (req, res) => {
-  res.render('index', options);
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
-server.listen(server.get('port'));
+app.listen(app.get('port'), () =>{
+  console.info(`Listening at http://localhost:${app.get('port')}`);
+});
