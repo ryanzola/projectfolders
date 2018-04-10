@@ -59,16 +59,6 @@ body {
 .screen {
   width: inherit;
 }
-.showcase {
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  .icons {
-    margin: auto;
-    width: 6vw;
-  }
-}
 .button-area {
   .download {
     border: #9085db;
