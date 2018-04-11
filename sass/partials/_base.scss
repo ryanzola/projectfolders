@@ -105,9 +105,21 @@ body {
     background: #4fadff;
     transition: background 200ms ease-in-out;
     &:hover {
-      background: #2c2b4b;
+      background: #243647;
     }
   }
+}
+.white {
+  background: #FFF;
+}
+.dark-title {
+  color: #243647;
+}
+.dark {
+  color: #555;
+}
+.desktop {
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .instructions {
