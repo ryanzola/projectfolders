@@ -2,14 +2,31 @@ doctype html
 html(lang="en")
   include head.pug
   body.container-fluid
-
     section.landing.row
+      .header.fixed-top
+        div.logo.fixed-top Ryan Zola
+        .nav-bg
+      .feature-header
+        ul.nav.feature-list.pl-5.pr-5
+          li.nav-item
+            span.mr-3.fas.fa-mouse-pointer
+            span Design
+          li.nav-item
+            span.mr-3.fas.fa-database
+            span CMS
+          li.nav-item
+            span.mr-3.fas.fa-i-cursor
+            span Editors
+          li.nav-item
+            span.mr-3.fas.fa-code
+            span Scripting
       .col-12
-        .section-title.mt-4.mb-3.text-center Gradient Project Folders
-        .row.d-flex.justify-content-center.mt-2
-          .col-9
-            img.screen.img-fluid(src="../assets/projectfolders.png")
+        .row.d-flex.justify-content-around
+          .col-4.d-flex.flex-column.justify-content-center
+            h2 Project Gradient Folders
             p.mt-3 Gradients make your life better: fact. So here's a set of over 50 handcrafted, artisan project-specific gradient folders + a bonus TypeScript folder for your computer system so you can live your best life.
+          .col-6
+            img.img-fluid(src="../assets/icon-array.png")
 
     section.breaker.row
       .column.col-4.d-flex.flex-column.justify-content-center.align-items-center

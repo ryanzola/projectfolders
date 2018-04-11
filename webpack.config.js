@@ -69,6 +69,9 @@ module.exports = {
     })
   ],
   resolve: {
+    alias: {
+      jquery: './node_modules/jq'
+    },
     extensions: ['.json', '.js', '.css', '.scss']
   },
   devtool: 'source-map',
