@@ -20,7 +20,7 @@ a {
 
 p {
   margin: 0;
-  color: #999;
+  color: hsla(0, 0%, 100%, .6);
 }
 
 pre {
@@ -131,7 +131,10 @@ body {
 
   .column {
     .title {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Gugi', sans-serif;
+      font-weight: 100;
+      font-size: 1.3em;
+      color: #4fadff;
     }
     .graphic {
       width: calc(68vw / 3);
