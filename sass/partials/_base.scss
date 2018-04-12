@@ -55,6 +55,7 @@ body {
   height: 70px;
   width: 100%;
   .logo {
+    width: 300px;
     top: 15px;
     left: 20px;
     font-family: 'Homemade Apple', cursive;
@@ -95,9 +96,6 @@ body {
 }
 .section-title {
   font-family: 'Roboto', sans-serif;
-}
-.screen {
-  width: inherit;
 }
 .button-area {
   .download {
